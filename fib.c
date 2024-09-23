@@ -1,5 +1,5 @@
 // Name: Dominic Wrtaza
-// Date: 9/4/2024
+// Date: 9/20/2024
 // File Purpose: To perfrom the Fibonacci sequence
 
 #include <stdio.h>
@@ -25,7 +25,7 @@ unsigned long int fibonacci_recursive(unsigned long int n) {
     return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2);
 }
 
-unsigned  long int main(unsigned long int argc, char *argv[]) {
+int main(unsigned long int argc, char *argv[]) {
     
     // Convert the first argument to an unsigned long unsigned long integer
     unsigned long int first_num = atoi(argv[1]);
