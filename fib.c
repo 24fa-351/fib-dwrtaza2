@@ -25,8 +25,7 @@ unsigned long int fibonacci_recursive(unsigned long int n) {
     return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2);
 }
 
-int main(unsigned long int argc, char *argv[]) {
-    
+int main(int argc, char *argv[]) {
     // Convert the first argument to an unsigned long unsigned long integer
     unsigned long int first_num = atoi(argv[1]);
 
@@ -35,7 +34,7 @@ int main(unsigned long int argc, char *argv[]) {
     fscanf(file, "%ld", &file_num);
     fclose(file);
 
-    unsigned long int sum_of_firstNum_fileNum = first_num + file_num - 1 ;
+    unsigned long int sum_of_firstNum_fileNum = first_num + file_num - 1;
 
     unsigned long int result;
     if (argv[2][0] == 'r') {
@@ -46,8 +45,7 @@ int main(unsigned long int argc, char *argv[]) {
         return 1;
     }
 
-   printf("%ld\n", result);
-
+    printf("%ld\n", result);
 
     return 0;
 }
