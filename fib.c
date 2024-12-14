@@ -5,24 +5,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-unsigned long int fibonacci_iterative(unsigned long int n) {
-    if (n <= 1) {
-        return n;
+unsigned long int fibonacci_iterative(unsigned long int nx) {
+    if (nx <= 1) {
+        return nx;
     }
-    unsigned long int a = 0, b = 1, temp;
-    for (unsigned long int i = 2; i <= n; i++) {
-        temp = a + b;
-        a = b;
-        b = temp;
+    unsigned long int ax= 0, bx= 1, temp;
+    for (unsigned long int i = 2; i <= nx; i++) {
+        temp = ax+ bx;
+        ax= bx;
+        bx= temp;
     }
-    return b;
+    return bx;
 }
 
-unsigned long int fibonacci_recursive(unsigned long int n) {
-    if (n <= 1) {
-        return n;
+unsigned long int fibonacci_recursive(unsigned long int nx) {
+    if (nx <= 1) {
+        return nx;
     }
-    return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2);
+    return fibonacci_recursive(nx - 1) + fibonacci_recursive(nx - 2);
 }
 
 int main(int argc, char *argv[]) {
@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
 
     FILE *file = fopen(argv[3], "r");
     unsigned long int file_num;
-    fscanf(file, "%ld", &file_num);
+    fscanf(file , "%ld", &file_num);
     fclose(file);
 
     unsigned long int sum_of_firstNum_fileNum = first_num + file_num - 1;
