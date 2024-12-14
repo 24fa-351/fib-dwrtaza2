@@ -1,0 +1,49 @@
+# Ignore object files, compiled binaries, and libraries
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dll
+*.dylib
+
+# Ignore Clang-specific files
+.clang-format
+.clang-tidy
+.clangd/
+
+# Ignore debugging files
+*.gch
+*.dSYM/
+*.core
+*.stackdump
+
+# Ignore IDE and editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.cbp
+*.code-workspace
+
+# Ignore build and test directories
+/build/
+/bin/
+/obj/
+
+# Ignore temporary or backup files
+*~
+*.bak
+*.tmp
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+*.log.*
+
+# Ignore formatting artifacts
+format-output.txt
